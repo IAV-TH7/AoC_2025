@@ -11,8 +11,6 @@ function ReadFile(path, cod, print_err=true){
 	return result;
 }
 
-const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
-
 function Advent_Main(filename){
 	let file = ReadFile("./"+filename, { encoding: 'utf8', flag: 'r' }, true);
 	let lines = file.split('\n')
